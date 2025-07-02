@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Director';
+    src: url('fonts/Director-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Director', sans-serif;
+    font-size: 10px;
+    letter-spacing: -0.01em;
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .top-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 9pt;
+  }
+  
+  h1 {
+    font-size: 12pt;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 9pt;
+    margin-bottom: 1rem;
+  }
+  
+  .bio {
+    max-width: 340px;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: manual;
+    word-break: break-word;
+  }
+  
+  .bio img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 50px auto 50px; /* top, horizontal (auto), bottom */
+  }
+  
+  .links a {
+    display: block;
+    margin-top: 10px;
+    font-size: 9pt;
+  }
+  

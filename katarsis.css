@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Director';
+    src: url('fonts/Director-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Director', sans-serif;
+    margin: 0;
+    background: white;
+    color: black;
+    font-size: 10px;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    overflow: hidden; /* Prevent full-page scroll */
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  /* Left Panel (scrollable feed) */
+  .left-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 100px 60px 60px; /* Increased top padding here */
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .left-panel::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Video embed block */
+  .video-embed {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Make videos wider */
+    margin: 0 auto;
+  }
+  
+  .video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+  
+  /* Two-column image grid */
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .image-grid img {
+    width: auto;
+    max-width: calc(50% - 10px); /* Keep two columns */
+    height: auto;
+    object-fit: contain; /* Ensures no cropping */
+    display: block;
+  }
+  
+  /* Right Panel (fixed text) */
+  .right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    padding: 60px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-text {
+    max-width: 350px;
+    margin-top: 60px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: auto;
+  }
+  
+  .project-text h2 {
+    font-size: 12pt;
+    font-weight: normal;
+    margin-top: -10px;
+    margin-bottom: 3rem;
+  }
+  
+  .project-text p {
+    font-size: 9pt;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    hyphens: manual;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  
+  .index-link {
+    font-size: 9pt;
+    text-align: right;
+    margin-right: 100px;
+  }
+  
+  .media-wrapper:last-of-type {
+    margin-top: 40px;
+  }
