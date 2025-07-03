@@ -112,3 +112,10 @@
     text-align: right;
     margin-right: 100px;
   }
+
+  .image-grid video {
+    width: calc(50% - 10px);
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
